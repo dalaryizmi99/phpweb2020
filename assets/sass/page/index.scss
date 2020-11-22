@@ -1,0 +1,253 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+//reset CSS
+@import '../vendor/reset';
+
+//fontAwesome
+@import '../vendor/fontAwesome';
+//end fontAwesome
+
+//slick slider
+@import '../vendor/slick';
+//end slick slider
+
+//other
+@import '../vendor/other';
+//end other
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+// body background
+body {
+    font-family: 'Segoe UI';
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../images/000032.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+}
+
+// end background
+
+// set 
+.all {
+    height: 100%;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+// end set
+
+// Logo web
+.logoHeader {
+    color: #fff;
+    position: relative;
+    top: -9%;
+    left: 11%;
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.logoHeader__1 {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+}
+
+.logoHeader__2 {
+    margin-left: 4%;
+}
+
+// End Logo Web
+
+// Body 
+// Slogan Quotes
+.bodyPage {
+    height: calc(100% - 400px);
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.upperText {
+    text-transform: uppercase;
+    // font-size: 50pt;
+}
+
+#typewriter {
+    color: #fff;
+    // font-size: 40pt;
+    margin: 0;
+    font-family: "Courier New";
+
+    &:after {
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// End Slogan Quotes
+
+//Login Form
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.login-form {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.login-form input {
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    color: #333;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 100%;
+    transition: border 0.25s linear;
+    font-weight: normal;
+}
+
+.login-form input:focus {
+    border-color: var(--primary);
+}
+
+.login-form .forgot {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--primary);
+    text-transform: uppercase;
+}
+
+.login-form .input-icon {
+    position: relative;
+}
+
+.login-form .input-icon input {
+    padding-right: 4rem;
+}
+
+.login-form .input-icon i {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+}
+
+// End Login Form
+// footer page
+.footerPage {
+    display: flex;
+    color: $whiteColor;
+}
