@@ -15,38 +15,59 @@
 
 <body>
     <div class="all">
+        <!-- Logo Top Page -->
         <div class="logoHeader">
             <p class="logoHeader__1">DALARYIZMI</p>
             <p class="logoHeader__2">WEBSITE</p>
         </div>
+        <!-- End Logo -->
+        <!-- Body Page -->
         <div class="bodyPage">
+            <!-- Funny Slogan -->
             <div class="quote">
                 <pre id="typewriter">
                     <span class="upperText">Sự vi diệu của code là:</span>
-                        hôm qua chạy tốt,
-                          hôm nay không được,
-                            nhưng ngày mai lại chạy bình thường....</pre>
+                        <span class="subText">hôm qua chạy tốt,
+                            hôm nay không được,
+                              nhưng ngày mai lại chạy bình thường....</span>
+                </pre>
             </div>
-            <div class="login-form">
-                <!-- <head>
-                    <link
-                    rel="stylesheet"
-                    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-                    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-                    crossOrigin="anonymous"
-                  />
-                  </head> -->
+            <!-- End Slogan -->
 
-                <form class="login-form" autocomplete="off" action="#">
-                    <input type="email" name="email" placeholder="Email" />
-                    <div class="input-icon">
-                        <input type="password" name="email" placeholder="Password" />
-                        <i class="fa fa-eye show-password"></i>
+            <!-- Login Form -->
+            <div class="login-form">
+                <form action="#">
+                    <h2 class="title">Welcome</h2>
+                    <img
+                        src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/82b8d8efd3b0ac6382b9d0d71a99c6cf9dcefa23/img/avatar.svg">
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Username</h5>
+                            <input type="text" class="input">
+                        </div>
                     </div>
-                    <a href="#" class="forgot">Forgot password?</a>
-                    <button>Sign in</button>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            <h5>Password</h5>
+                            <input type="password" class="input">
+                        </div>
+                    </div>
+                    <div class="directAccount">
+                        <a href="#">Remember Me</a>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <div class="">
+                        <input type="submit" class="btnSubmit" value="Login">
+                    </div>
                 </form>
             </div>
+            <!-- End Login Form -->
         </div>
         <div class="footerPage">
             <p>Handcrafted by me</p>
